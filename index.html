@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        .Movies{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 20px;
+            gap:20px;
+        }
+        .movie-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+            /* border: 1px solid black; */
+        }
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#btn,
+#view-more {
+  background-color: darkcyan;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+     </style>
+
+</head>
+
+<body>
+
+    <h1>Movie Search App</h1>
+    <form><input type="text" placeholder="Search For Movies" id="search-input"><button id="btn">Search</button></form>
+    <div class="Movies">
+        
+    </div>
+    <button id="view-more" style="display: none;">view more</button>
+
+
+    <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
